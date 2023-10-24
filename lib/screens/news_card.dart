@@ -21,6 +21,7 @@ class NewsCard extends StatelessWidget {
             CachedNetworkImage(
               imageUrl: articles.urlToImage??"",
               height: 180,
+              fit: BoxFit.fill,
               placeholder: (context, url) => Center(child: CircularProgressIndicator(color: Colors.green,)),
               errorWidget: (context, url, error) => Icon(Icons.error),
             ),
